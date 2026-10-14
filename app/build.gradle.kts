@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
-    id("org.jetbrains.kotlin.plugin.serialization") version "2.4.20"
+    id("org.jetbrains.kotlin.plugin.serialization") version "2.4.21"
 }
 
 android {
@@ -37,6 +37,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.material3)
     val nav3Version = "1.2.0"
     implementation("androidx.navigation3:navigation3-runtime:$nav3Version")
     implementation("androidx.navigation3:navigation3-ui:$nav3Version")
